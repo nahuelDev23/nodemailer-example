@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer')
 
 const sendEmail = async (req, res) => {
+    
     const emailOptions = {
         from: 'Remitente',
         to: 'nahuel.dev.23@gmail.com',

@@ -1,7 +1,5 @@
 const express = require('express');
-
 const emailRoutes = require('./routes/email')
-
 const dotenv = require('dotenv')
 
 dotenv.config()
@@ -19,7 +17,6 @@ class Server {
         this.port = process.env.PORT || '7000';
 
         // Métodos iniciales
-
         this.middlewares();
         this.routes();
     }
@@ -35,7 +32,6 @@ class Server {
     }
 
     middlewares() {
-
         // Lectura del body
         this.app.use(express.json());
 
